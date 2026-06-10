@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*☆	★ ✨ emojis*/
+}
+
+body {
+    background : url('fondo3.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white; /*Color del texto*/
+    font-family: 'Inter' sans-serif; /*Tipo de letera de la pagina*/
+}
+
+nav {
+    display: flex; /*Alinia los botones a la derecha*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%; /*Ancho de la barra del menú*/
+    background-color: #482258; 
+}
+
+nav .titulo {
+    font-size: 24px; /*Tamaño del titulo*/
+    font-weight: bold;
+}
+
+.enlaces a{
+    padding: 15px 25px;   /*hace que los botones tengan el mismo tamaño */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-1{
+    background-color: #673979;  /*colores de los botones del menu*/
+}
+.btn-2{
+    background-color: rgb(59, 60, 141);
+}
+.btn-3{
+    background-color: #673979;
+}
+.btn-4{
+    background-color: #3b3c8d;
+}
+.btn-5{
+    background-color: #673979;
+}
+
+.enlaces a:hover{
+    filter: brightness(1.2);  /*para que brille el boton*/
+    transform: translateY(-3px);
+}
+
+nav .enlaces a {
+    color: white; /*Color de los enlaces*/
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+header.hero { /*Imagen del principio*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 8%; /*Tamaño de lo ancho la iamgen*/
+    background : url(fondo4.jpeg); /* Imagen de fondo*/
+    background-repeat: no-repeat; /*Hace que la imagen no se repita*/
+    background-size: cover; /*Es para que la imagen se ajuste al tamaño de la pamtalla*/
+}
+
+
+.hero-texto {
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.hero-texto h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: white; /*Texto arriba del botón menú*/
+}
+
+.hero-texto button {  /*Boton para ver el menu*/
+    background-color: rgb(59, 60, 141);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 500px;
+}
+
+.principal {
+    /* Tarjetas en fila horizontal */
+    display: flex;       /* Activa la fila horizontal */
+    flex-wrap: wrap;       /* Si no caben las manda a la línea de abajo */
+    justify-content: center; /* Centra todo el bloque en la pantalla */
+    gap: 30px;             /* Separa las tarjetas */
+    padding: 20px;
+}
+
+section.principal {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+section.principal h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+div.principal {
+    display: flex; /* Activa el modo horizontal*/
+    justify-content: center; /*Centra las iamgenes*/
+    flex-wrap: wrap; /*Se ajustan al tamaño de la pantalla*/
+    align-items: center;  /*Alinia verticalmente al centro*/
+    gap: 20px;  /*Espacion de cada iamgen*/
+}
+
+div.principal img {
+    width: 220px; 
+    height: 220px;
+    object-fit: cover; 
+    margin: 15px; 
+}
+
+/* Fondo morado de las imagenes*/
+.sabor {
+    background: rgba(109, 40, 217, 0.1); /* Color de fondo */
+    border: 1px solid #6d28d9;           /* Borde */
+    border-radius: 150px;    /* Esquinas redondeadas */
+    padding: 10px;          /* Espacio interno */
+    text-align: center;     /* Centra el texto y la imagen */
+}
+
+/* Imagenes dentro de la tarjeta (para que no se distorsionen) */
+.sabor img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* Efecto al pasar el mouse */
+.sabor:hover {
+    transform: translateY(-8px); /* Salta un poquito */
+    border-color: rgba(109, 40, 217, 0.5); /* Borde morado más intenso */
+    box-shadow: 0 10px 25px rgba(109, 40, 217, 0.3); /* Sombra morada brillante */
+}
+
+.sabores h2{
+    text-align: center; /*Centra el texto*/
+    color: white; /*Color del texto*/
+    margin-top: 30px;  /*Espacio de arriba*/
+    margin-bottom: 20px;  /*Separa el texto de las iamgenes de abajo*/  
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #482258;
+    font-size: 14px;
+}
+
+.inicio{
+    max-width: 1100px; /*Se puede encojer en celulares pero en pantallas grandes lo maximo que se expande es 1100px */
+    margin:0 auto; /*Calcula automaticamente los espacios de izquierda y derecha*/
+    padding: 40px 20px; /*Separa las imagenes*/
+}
+
+.letreros{
+    display: flex; /*Hace que las imagenes se pongan una a lado de otra*/
+    align-items: center; /*Centra las iamgenes de forma vertical*/
+    /*justify-content: space-between; texto*/
+    gap: 50px; /*Separa las imagenes para que no se encimen*/
+    margin-bottom: 60px;/*Para separar*/
+    background: rgba(0,0,0,0.4); /*Fonfo de las imagenes*/
+    padding: 30px;
+    border-radius: 150px; /*Redondea esquinas*/
+    border: 1px solid  #ffffff/*Marco de las imagenes*/  /*rgba(255, 255, 255, 0.39);*/
+}
+
+.letreros img{
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+
+
+
+.sabor-mes-{
+    text-align: center;
+    padding: 60px 20px;
+    background: radial-gradient(circle, rgba(128, 0, 128, 0.15) 0%, rgba(0,0,0,0) 70%); /*Luz morada de la imagen */
+
+    
+}
+
+.misterio {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.misterio-titulo {
+    color: #501580;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cono-misterioso {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    animation: flotar 3s ease-in-out infinite; /* El efecto para que flote */
+    filter: drop-shadow(0 0 20px rgba(128, 0, 128, 0.5)); /* Brillo morado alrededor */
+}
+
+/* Animación del cono */
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.texto {
+    color: #ddd;
+    margin: 20px 0;
+    font-style: italic;
+    font-size: 25px; /*Tamaño del texto*/
+}
+
+.misterio button {
+    background-color: #3d005a;
+    color: white;
+    border: 2px solid #8b8b8b;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.misterio button:hover {
+    background-color: #8b8b8b;
+    color: #3d005a;
+    transform: scale(1.05);
+}

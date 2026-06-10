@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('fondo3.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Inter' sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #482258; 
+}
+
+nav .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.enlaces a{
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-1{
+    background-color: #673979;  /*colores de los botones del menu*/
+}
+.btn-2{
+    background-color: rgb(59, 60, 141);
+}
+.btn-3{
+    background-color: #673979;
+}
+.btn-4{
+    background-color: rgb(59, 60, 141);
+}
+.btn-5{
+    background-color: #673979;
+}
+
+.enlaces a:hover{
+    filter: brightness(1.2);  /*para que brille el boton*/
+    transform: translateY(-3px);
+}
+
+nav .enlaces a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+
+.contenedor-promos {
+    display: flex;
+    flex-wrap: wrap; /* Para que se acomoden solas */
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+}
+
+.titulo-promos h2{
+    text-align: center; /*Centra el texto*/
+    color: white; /*Color del texto*/
+    margin-top: 10px;  /*Espacio de arriba*/
+    margin-bottom: 10px;  /*Separa el texto de las iamgenes de abajo*/ 
+}
+
+/* Diseño de cada tarjeta */
+.promos {
+    background: #40214d; /* Color del menú */
+    border: 2px solid #6a0dad;
+    padding: 20px;
+    width: 280px;   /* Ancho fijo para que todas midan igual */
+    min-height: 150px; /* Altura mínima para que no se vean aplastadas */
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centra el texto verticalmente */
+}
+
+/* Efecto al pasar el mouse por encima */
+.promos:hover {
+    transform: translateY(-10px); /*Salto al pasar el cursor*/
+    border-color: #6462e2;
+}
+
+.promos h3 {
+    color: #ab5cda; /* Títulos en morado clarito para que resalten */
+    margin-bottom: 10px; /*Espacio entre el titulo y el texto*/
+}
+
+
+.tipo-promos {
+    display: flex; /*Ayuda a que las imagenes se acomoden solas*/
+    flex-wrap: wrap;
+    gap: 100px; /*Espacio entre tarjetas*/
+    justify-content: center;
+    /*max-width: 900px;
+    margin: 0 auto; /*Centra todo el contenido en la pantalla*
+    padding: 20px;*/
+}
+
+/*
+.tipo-promos div:nth-child(5){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}*/
+
+.promociones-img{
+    flex: 350px; /*Ancho fijo*/ /* 0 0 350px;*/
+    margin: 20px; /* Ayuda a separar las imagenes*/
+    display: flex;
+    justify-content: center; /*Centra las iamgenes*/
+}
+
+.promociones-img img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 12px;
+    border: 2px solid #3d005a;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+    padding: 5px;
+}
+
+
+
+/*
+.promociones-img:nth-child(5){
+    grid-column: span 2; /*Esto estira todo el campo para que la quinta imagen ocupe todo el espacio*
+    display: flex;
+    justify-content: center;
+}*/
+
+
+

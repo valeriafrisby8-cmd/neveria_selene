@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('fondo3.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family:'Inter' sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #482258; 
+}
+
+nav .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.enlaces a{
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-1{
+    background-color: #673979;
+}
+.btn-2{
+    background-color: rgb(59, 60, 141);
+}
+.btn-3{
+    background-color: #673979;
+}
+.btn-4{
+    background-color: rgb(59, 60, 141)
+}  
+.btn-5{
+    background-color: #673979;
+}
+
+.enlaces a:hover{
+    filter: brightness(1.2);
+    transform: translateY(-3px);
+}
+
+nav .enlaces a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.sabores{
+    padding: 50px 40px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap; /*es para que las imagenes salten a otra limea si no caben */
+    justify-content: center; /*centra todo el contenido de la clase menu*/
+    gap: 10px; /*es le espacion entre tajetas*/
+    padding: center;
+}
+
+.menu-sabor {
+    width: 250px;  /* Un ancho fijo para todas las iamgenes */
+    background-color: #4a3858; /*Color de las tarjetas*/
+    border-radius: 35px; /*Esquinas redondeadas de las tarjetas*/
+    padding: 15px; /*Espacio de arriba y abajo de cada imagen*/
+    text-align: center; /*Centra el texto*/
+    
+}
+
+.menu-sabor:hover{
+    transform: translateY(-5px);  /*Salto al pasar el cursor*/
+}
+
+.menu-sabor img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /*ajusta imagenes*/
+    border-radius: 100px; /*Esquinas redondeadas*/
+}
+
+.sabores  h2{
+    text-align: center; /*Centra el texto*/
+    color: white; /*Color del texto*/
+    margin-top: 30px;  /*Espacio de arriba*/
+    margin-bottom: 20px;  /*Separa el texto de las iamgenes de abajo*/ 
+}
+
+.sabores h3{
+    text-align: center; /*Centra el texto*/
+    color: white; /*Color del texto*/
+    margin-top: 30px;  /*Espacio de arriba*/
+    margin-bottom: 20px;  /*Separa el texto de las iamgenes de abajo*/ 
+}
+
+
+
+.tabla-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.sabores-toppings {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Si la pantalla es chica, se pone uno abajo del otro automáticamente */
+    margin-bottom: 50px;
+}
+.menu-img {
+    max-width: 45%;
+    min-width: 320px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+.seccion-tamaños {
+    text-align: center;
+    background: rgba(117, 117, 117, 0.116);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #3d005a;
+}
+.seccion-tamaños h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.tamaños-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.categoria{
+    margin-bottom: 50px;
+}
+
+.categoria h3{
+    text-align: center;
+    margin-bottom: 20px;
+}

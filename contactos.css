@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('fondo3.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Inter' sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #482258; 
+}
+
+nav .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.enlaces a{
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-1{
+    background-color: #673979;  /*colores de los botones del menu*/
+}
+.btn-2{
+    background-color: rgb(59, 60, 141);
+}
+.btn-3{
+    background-color: #673979;
+}
+.btn-4{
+    background-color: rgb(59, 60, 141);
+}
+.btn-5{
+    background-color: #673979;
+}
+
+.enlaces a:hover{
+    filter: brightness(1.2);  /*para que brille el boton*/
+    transform: translateY(-3px);
+}
+
+nav .enlaces a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+
+
+
+
+.contactos {
+    background-color: transparent; /* Sin fondo de color, para que se vea el fondo de tu página */
+    padding: 40px 20px;
+    text-align: center;
+    color: white; /* Texto en blanco */
+    border: none; /* Asegura que no haya líneas */
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre iconos */
+    margin-top: 30px;
+}
+
+.iconos a img {
+    width: 100px; 
+    height: 100px;
+    
+    /* ESTO ES LO MÁS IMPORTANTE: */
+    /* Invertir el color para que el negro del icono se vuelva BLANCO */
+    /* y el fondo blanco se vuelva TRANSPARENTE */
+    filter: invert(1);
+    
+    transition: transform 0.3s;
+
+    /* ... lo que ya tienes ... */
+    background-color: transparent; /* Esto asegura que no haya color de fondo */
+    border-radius: 50%; /* Si quieres que los iconos tengan un círculo tenue alrededor */
+}
+
+.iconos a img:hover {
+    transform: scale(1.1); /* Ligero aumento al pasar el mouse */
+}

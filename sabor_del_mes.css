@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('fondo3.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Inter' sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #482258; 
+}
+
+nav .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.enlaces a{
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*
+.btn-1{
+    background-color: #673979;  /*colores de los botones del menu 
+}
+.btn-2{
+    background-color: rgb(59, 60, 141);
+}
+.btn-3{
+    background-color: #673979;
+}
+.btn-4{
+    background-color: rgb(59, 60, 141);
+}
+.btn-5{
+    background-color: #673979;
+}
+    */
+
+
+.enlaces a:hover{
+    filter: brightness(1.2);  /*para que brille el boton*/
+    transform: translateY(-3px);
+}
+
+nav .enlaces a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+
+.revelacion{
+    text-align: center;
+    padding:  20px;
+    color: white;
+}
+
+
+.revelacion-t{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    display: inline-block;
+    max-width: 500px;
+    border: 1px solid ;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.revelado{
+    max-width: 100%; /* Nunca será más grande que la caja que la contiene */
+    width: 70%;      /* Ocupará solo la mitad del ancho del contenedor */
+    height: auto;
+    display: block;  /* Ayuda a que los márgenes funcionen mejor */
+    margin: 0 auto;  /* Esto además la mantendrá centrada */
+    border-radius: 50px;
+
+    
+}
+
+
+.boton:hover{
+    background: #ffffff; /*Color del boton al pasar el mouse*/
+    color: #4a017a; /*Color de la letra la pasar el mouse*/
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #bdbdbd; /*Iluminacion del boton*/
+    
+}
+
+
+.cont-boton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px; /*Separa el boton y el texto de la imagen*/
+    flex-direction: column; /*Acomoda todo en forma de columna*/
+    align-items: center; /*Centra el contenido*/
+    
+}
+
+.boton {
+    display: inline-block; /*Acomoda el tamaño del boton para que no se haga tan largo*/
+    padding: 10px 40px;
+    background: #4a017a; /*#3b3c8d;*/
+    color: #ffffff;
+    font-size: 20px; /*Tamaño del texto del boton*/
+    border-radius: 50px; /*Redondea las esquinas del boton*/
+    border: 2px solid ; /*Borde del boton*/
+    transition: 0.4s; /*Efecto al pasar el mouse*/
+}
+
+
+
+
+
