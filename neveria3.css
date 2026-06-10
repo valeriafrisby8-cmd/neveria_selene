@@ -256,3 +256,11 @@ footer {
     color: #3d005a;
     transform: scale(1.05);
 }
+
+header, nav, .menu, .botones {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 15px !important;
+}
